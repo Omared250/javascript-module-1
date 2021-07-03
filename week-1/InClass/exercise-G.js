@@ -11,4 +11,3 @@ var intpercentageStudents = Math.round(percentageStudents);
 
 console.log(intpercentageMentors + "% of the class are Mentors");
 console.log(intpercentageStudents + "% of the class are Students");
-
