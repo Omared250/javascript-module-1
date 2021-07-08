@@ -16,16 +16,16 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(num1, num2) {
+    return num1 + num2;
 }
 
-function multiply() {
-
+function multiply(num3, num4) {
+    return num3 * num4;
 }
 
-function format() {
-
+function format(num5) {
+    return "£"+num5;
 }
 
 const startingValue = 2
