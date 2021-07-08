@@ -6,3 +6,5 @@ function boolChecker(bool) {
   return "No bool, not cool.";
 }
 console.log(boolChecker(true));
+
+/* the answer is boolean */
