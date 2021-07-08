@@ -11,3 +11,7 @@ function moodMessage(mood) {
 }
 
 console.log(moodMessage(5));
+
+/*
+this exercise take a word depending of your mood and it is going to give you an answer
+*/
