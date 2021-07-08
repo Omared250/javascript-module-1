@@ -11,3 +11,7 @@ function numberChecker(num) {
 }
 
 console.log(numberChecker("omar"));
+
+/* In this exercise the function take a number and evaluate each case that the if is saying 
+    in this case is trying to evaluate if a number is grater, equal, less or just is not a number
+*/
