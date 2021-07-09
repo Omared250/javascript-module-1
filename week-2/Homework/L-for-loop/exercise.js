@@ -7,8 +7,13 @@
 */
 
 let n = 10;
+var result = 0;
 
-function sumTillNum(num){
+function sumTillNum(num) {
+	for (i = 0; i <= num; i ++) {
+		result += i;
+	}
+	return result;
 	//your code here
 }
 
