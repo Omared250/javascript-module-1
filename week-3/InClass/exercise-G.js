@@ -6,8 +6,9 @@ function yearsAvailabelToDrive (years) {
             return year;
         }
     }).filter((canDrive) => console.log("These are the birth years of people who can drive: " + canDrive));
-    return years;
 }
 
-console.log(yearsAvailabelToDrive(years));
+const canDrive = yearsAvailabelToDrive(years);
+
+console.log(canDrive);
 
