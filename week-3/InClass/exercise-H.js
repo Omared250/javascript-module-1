@@ -1,11 +1,11 @@
 names = ["Daniel", "James", "Irina", "Mozafar", "Omar"];
 
-function foundMyName (myName) {
-    if (myName.find(names => names === myName)) {
-        return "Found me!";
+var lookingMyName = names.find((personName) => {
+    if (personName === "Omar") {
+        console.log("Found me!");
     } else {
-        return "Haven't found me :(";
+        console.log("Haven't found me :(");
     }
-}
+});
 
-console.log(foundMyName("Omar"));
+console.log(lookingMyName);
