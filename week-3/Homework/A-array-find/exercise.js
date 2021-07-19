@@ -9,7 +9,7 @@ var names = ["Rakesh", "Antonio", "Alexandra", "Andronicus", "Annam", "Mikey", "
 
 function findLongNameThatStartsWithA(name) {
   let legthName = name.length;
-  if (legthName > 7 && name[0] === "A") {
+  if (legthName > 7 && name.startsWith("A")) {
     return name;
   }
 }
