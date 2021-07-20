@@ -7,7 +7,10 @@
   NOTE: only the names should be returned, not the means of transport.
 */
 
-function journeyPlanner() {
+function journeyPlanner(arrayOfFamousPlaces, wayOfTransport) {
+  const famousPlaces = arrayOfFamousPlaces.filter((famousPlace) => 
+  famousPlace.includes(wayOfTransport)).map((famousPlace) => famousPlace[0]);
+  return famousPlaces;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
