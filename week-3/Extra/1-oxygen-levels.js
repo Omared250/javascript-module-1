@@ -12,8 +12,8 @@ Write a function that finds the first safe oxygen level in the array - Oxygen be
 function safeLevels(levelOfSaveOxygen) {
     return levelOfSaveOxygen.find((level) => {
         const numberLevel = parseFloat(level.split("").slice(0, 4).join(""));
-        return numberLevel > 19.5 && numberLevel < 23.5
-    })
+        return numberLevel > 19.5 && numberLevel < 23.5;
+    });
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

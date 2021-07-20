@@ -10,8 +10,14 @@
   Use the tests to confirm which message to return
 */
 
-function bushChecker() {
-
+function bushChecker(bushes) {
+  if(!Array.isArray(bushes)) {
+    return "Error, the element isn't an array!"
+  } else if(bushes.every((bush) => bush === "pink")) {
+    return "Bush is safe to eat from";
+  } else {
+    return "Toxic! Leave bush alone!";
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
