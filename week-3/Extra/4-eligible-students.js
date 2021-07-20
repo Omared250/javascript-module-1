@@ -8,9 +8,9 @@
 */
 
 function eligibleStudents(arrayOfPassedStudents) {
-  const passedStudents = arrayOfPassedStudents.filter((student) => student[1] >= 8);
-  return passedStudents.map((passedStudent) => passedStudent[0]);
-
+  return arrayOfPassedStudents = arrayOfPassedStudents.filter((student) => student[1] >= 8).map((passedStudent) => passedStudent[0]);
+//  const passedStudents = arrayOfPassedStudents.filter((student) => student[1] >= 8);
+//  return passedStudents.map((passedStudent) => passedStudent[0]);
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
