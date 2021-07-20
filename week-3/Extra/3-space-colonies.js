@@ -8,8 +8,13 @@
   NOTE: don't include any element that is not a "family".
 */
 
-function colonisers() {
-
+function colonisers(arrayOfFamily) {
+  const filteredFamily = arrayOfFamily.filter((family) => {
+    const splitFamily = family.split(" ");
+  
+    return splitFamily[0].charAt(0) === 'A' && splitFamily.includes("family");
+  });
+  return filteredFamily;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
