@@ -23,7 +23,30 @@ PasswordValidationResult=  [false, false, false, false, true]
 */
 
 function validatePasswords(passwords) {
+  const passwordlength = (password) => password.length >= 5;
+  const passwordUpperCase = (password) => password.some((element) => element.charCodeAt(0) >= 65 && element.charCodeAt(0) <= 90);
+  const passwordLowerCase = (password) => password.some((element) => element.charCodeAt(0) >= 97 && element.charCodeAt(0) <= 122);
+  const passwordChekingNumbers = (password) => password.some((element) => element.charCodeAt(0) >= 48 && element.charCodeAt(0) <= 57);
+  const passwordChekingSymbols = (password) => password.some((element) => 
+  element.charCodeAt(0) === 33 ||
+  element.charCodeAt(0) === 35 ||
+  element.charCodeAt(0) === 36 ||
+  element.charCodeAt(0) === 37 ||
+  element.charCodeAt(0) === 46 ||
+  element.charCodeAt(0) === 42 ||
+  element.charCodeAt(0) === 38 
+  );
 
+  passwords.map((password) => {
+    const splitedPassword = password.split("");
+    console.log (
+    passwordlength(password) &&
+    passwordUpperCase(splitedPassword) &&
+    passwordLowerCase(splitedPassword) &&
+    passwordChekingNumbers(splitedPassword) &&
+    passwordChekingSymbols(splitedPassword)
+    );
+  });
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
